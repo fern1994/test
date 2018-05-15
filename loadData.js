@@ -8,6 +8,7 @@ $(document).ready(function () {
       type: 'GET',
       success: function (data) {
         console.log(data);
+        $('#prefix').prop('disabled', true);
         $('#prefix').val(data[0].prefix);
         $('#first_name').val(data[0].first_name);
         $('#last_name').val(data[0].last_name);
